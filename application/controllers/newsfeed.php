@@ -18,15 +18,16 @@ class Newsfeed extends CI_Controller {
         $items = $this->getItems();
         
         // save array to session
-        $_SESSION['items'] = serialize($items);
+        $_SESSION['news'] = serialize($items);
    
         $this->load->view('temp_view/header', array('title' => 'Nieuws'));
-        $this->load->view('data_view/newsdata', array('items' => $items));
+        $this->load->view('data_view/newslist', array('items' => $items));
         $this->load->view('temp_view/footer');
     }
 
     public function newsitem($id) {
-        $items = unserialize($_SESSION['items']);
+        // load array from session
+        $items = unserialize($_SESSION['news']);
         $item = new News();
         foreach ($items as $x) {
             if($x->getId() == $id){
@@ -39,7 +40,7 @@ class Newsfeed extends CI_Controller {
         $this->load->view('temp_view/footer');
     }
 
-    public function getItems() {
+    private function getItems() {
         $id = 0;
 
         // load xml file

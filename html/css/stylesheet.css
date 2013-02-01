@@ -1,0 +1,25 @@
+/* 
+    Document   : stylesheet
+    Created on : Feb 1, 2013, 4:03:12 AM
+    Author     : jharvard
+
+*/
+
+
+#title {
+    font-size: 18px;
+    font-family: Helvetica,sans-serif;
+    font-weight: bold;
+}
+
+#info {
+    font-size: 14px;
+    font-family: Helvetica,sans-serif;
+}
+
+#pubdate{
+    font-size: 10px;
+    font-family: Helvetica,sans-serif;    
+    color: gray;
+}
+

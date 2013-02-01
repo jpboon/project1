@@ -1,7 +1,5 @@
 <div data-role="content">      
-    <div data-role="content">
-        <ul data-role="listview" data-theme="c">
-            <li data-role="list-divider">Nieuws</li>
+        <ul data-role="listview" data-theme="d" data-icon="info">
             <?php foreach ($items as $item): ?> 
                 <li><a href="newsitem/<?= $item->getId(); ?>">
                         <font style="font-size: small; white-space:normal">
@@ -12,9 +10,8 @@
                         <?= $item->getDescription(); ?>
                         </font>
                     </a></li>
-
             <?php endforeach ?>
         </ul>
-    </div>
+    
 
 </div>

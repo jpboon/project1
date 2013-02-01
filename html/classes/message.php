@@ -53,6 +53,9 @@ abstract class Message {
     }
 
     public function setPubdate($pubdate) {
+        if(strlen($pubdate) > 6 ) {
+            $pubdate = substr($pubdate, 0,-7);
+        }
         $this->pubdate = $pubdate;
     }
 

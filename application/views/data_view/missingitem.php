@@ -13,7 +13,11 @@
         <div id="info">         
             <?= $item->getDescription(); ?>
             <br>        
-            <?= $item->getInfo(); ?>
+           zaaknummer:  <?= $item->getZaaknummer(); ?>
+           <br>  
+           omschrijving: <?= $item->getOmschrijving(); ?>
+           <br>  
+           geolat: <?= $item->getGeolat(); ?>
         </div>
         <br>
 
