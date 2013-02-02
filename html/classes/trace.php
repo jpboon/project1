@@ -12,11 +12,10 @@ abstract class Trace extends Message {
     protected $zaaknummer;
     protected $omschrijving;
     protected $signalement;
-    protected $images;
+    protected $images = array();
 
     public function __construct() {
         parent::__construct();
-        $this->images = array();
         $this->zaaknummer = "";
         $this->omschrijving = "";
         $this->signalement = "";
@@ -50,8 +49,8 @@ abstract class Trace extends Message {
         return $this->images;
     }
 
-    public function setImages($images) {
-        $this->images = $images;
+    public function setImages($image) {
+        $this->images[] = $image;
     }
 }
 
