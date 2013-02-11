@@ -1,7 +1,7 @@
 <div data-role="content">      
     <ul data-role="listview" data-theme="d" data-icon="info">
         <?php foreach ($items as $item): ?> 
-            <li><a href="missingitem/<?= $item->getId(); ?>">
+            <li><a href="wanteditem/<?= $item->getId(); ?>">
                     <font style="font-size: small; white-space:normal">
                     <?= $item->getTitle(); ?>
                     </font>

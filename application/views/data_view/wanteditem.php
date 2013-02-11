@@ -22,17 +22,22 @@
             <?= $item->getZaaknummer(); ?>
             <br>  
             <br> 
-            <b>vermist sinds</b><br> 
-            <?= $item->getVermistsinds(); ?>
+            <b>datum delict</b><br> 
+            <?= $item->getDatumdelict(); ?>
             <br>
             <br>  
-            <b>laatst gezien in</b><br> 
-            <?= $item->getLaatstgezienin(); ?>
+            <b>plaats delict</b><br> 
+            <?= $item->getPlaatsdelict(); ?>
             <br>  
             <br> 
             <b>signalement</b><br> 
             <?= $item->getSignalement(); ?>
-            <br>
+            <br>  
+            <? if (strlen($item->getVideo()) > 0) { ?>
+                <iframe width="280" height="280" src="<?= $item->getVideo(); ?>" frameborder="0"></iframe> 
+                <br>
+                <br>
+            <? } ?>
             <b>omschrijving</b> 
             <?= $item->getOmschrijving(); ?>
         </div>

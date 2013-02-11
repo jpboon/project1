@@ -21,9 +21,7 @@ class News extends Message {
     
     public function setInfo($info) {
         $this->info = $info;
-    }
-    
-
+    }   
 }
 
 ?>

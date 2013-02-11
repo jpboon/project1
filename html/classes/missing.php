@@ -42,7 +42,6 @@ class Missing extends Trace {
     public function setLaatstgezienin($laatstgezienin) {
         $this->laatstgezienin = $laatstgezienin;
     }
-    
 }
 
 ?>

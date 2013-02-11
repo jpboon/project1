@@ -23,7 +23,6 @@ abstract class Message {
         $this->geolong = "";
     }
 
-
     public function getId() {
         return $this->id;
     }
@@ -74,7 +73,6 @@ abstract class Message {
     public function setGeolong($geolong) {
         $this->geolong = $geolong;
     }
-
 }
 
 ?>

@@ -1,7 +1,5 @@
 <div data-role="content">      
     <div data-role="content">
-
-
         <div id="title">
             <?= $item->getTitle(); ?>
         </div>
@@ -16,7 +14,6 @@
             <?= $item->getInfo(); ?>
         </div>
         <br>
-
+        <a style="float:right" href="/index.php/policecall/" data-role="button" data-inline="true" data-theme="a">Direct contact</a>
     </div>
-
 </div>
