@@ -14,7 +14,7 @@ Als er foto's van verdachte of vermiste personen beschikbaar zijn is er de mogel
 features:
 - Nieuwsberichten opvragen
 - Vermissingen opvragen
-- - Opsporingen opvragen
+- Opsporingen opvragen
 - Bovenstaande op landelijk en provinciaal niveau
 - Mogelijkheid om eventuele foto's weer te geven
 - Mogelijkheid om bij een vermissing direct contact op te kunnen nemen met de politie
